@@ -19,31 +19,31 @@ const Navigation = () => {
     {
       title: "About",
       items: [
-        { title: "Vision & Mission", href: "#vision" },
-        { title: "Leadership Team", href: "#leadership" },
-        { title: "School Legacy", href: "#legacy" },
-        { title: "Campus Virtual Tour", href: "#tour" },
-        { title: "Achievements", href: "#achievements" }
+        { title: "Vision & Mission", href: "/about#vision" },
+        { title: "Leadership Team", href: "/about#leadership" },
+        { title: "School Legacy", href: "/about#legacy" },
+        { title: "Campus Virtual Tour", href: "/about#tour" },
+        { title: "Achievements", href: "/about#achievements" }
       ]
     },
     {
       title: "Academics",
       items: [
-        { title: "CBSE/ICSE Curriculum", href: "#curriculum" },
-        { title: "Teaching Approach", href: "#approach" },
-        { title: "Departments", href: "#departments" },
-        { title: "Academic Calendar", href: "#calendar" },
-        { title: "Examinations", href: "#exams" }
+        { title: "CBSE/ICSE Curriculum", href: "/academics#curriculum" },
+        { title: "Teaching Approach", href: "/academics#approach" },
+        { title: "Departments", href: "/academics#departments" },
+        { title: "Academic Calendar", href: "/academics#calendar" },
+        { title: "Examinations", href: "/academics#exams" }
       ]
     },
     {
       title: "Admissions",
       items: [
-        { title: "Admission Process", href: "#process" },
-        { title: "Fee Structure", href: "#fees" },
-        { title: "Eligibility & Documents", href: "#eligibility" },
-        { title: "Schedule a Visit", href: "#visit" },
-        { title: "Admission FAQs", href: "#faqs" }
+        { title: "Admission Process", href: "/admissions#process" },
+        { title: "Fee Structure", href: "/admissions#fees" },
+        { title: "Eligibility & Documents", href: "/admissions#eligibility" },
+        { title: "Schedule a Visit", href: "/admissions#visit" },
+        { title: "Admission FAQs", href: "/admissions#faqs" }
       ]
     },
     {
@@ -94,14 +94,16 @@ const Navigation = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <img 
-                src="/lovable-uploads/e8342f00-c930-41c6-95fa-fb4c83c900a7.png" 
-                alt="Almonte High School Logo" 
-                className="h-10 w-10 object-contain"
-              />
-              <div className="text-2xl font-bold text-primary">
-                Almonte<span className="text-emerald-600">HS</span>
-              </div>
+              <a href="/" className="flex items-center gap-3">
+                <img 
+                  src="/lovable-uploads/e8342f00-c930-41c6-95fa-fb4c83c900a7.png" 
+                  alt="Almonte High School Logo" 
+                  className="h-10 w-10 object-contain"
+                />
+                <div className="text-2xl font-bold text-primary">
+                  Almonte<span className="text-emerald-600">HS</span>
+                </div>
+              </a>
             </div>
 
             {/* Desktop Navigation */}
@@ -110,7 +112,7 @@ const Navigation = () => {
                 <NavigationMenuList className="gap-1">
                   <NavigationMenuItem>
                     <NavigationMenuLink 
-                      href="#home"
+                      href="/"
                       className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                     >
                       Home
@@ -184,7 +186,7 @@ const Navigation = () => {
               <Button variant="outline" size="sm" className="text-xs">
                 Portal
               </Button>
-              <Button className="bg-emerald-600 hover:bg-emerald-700" size="sm" className="text-xs">
+              <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700 text-xs">
                 Apply
               </Button>
             </div>

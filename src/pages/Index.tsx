@@ -11,6 +11,7 @@ import HeroSection from "@/components/HeroSection";
 import QuickHighlights from "@/components/QuickHighlights";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import LatestNews from "@/components/LatestNews";
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
@@ -50,9 +51,11 @@ const Index = () => {
                   <div className="text-sm text-muted-foreground">International Partners</div>
                 </div>
               </div>
-              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
-                Learn More About Us
-              </Button>
+              <Link to="/about">
+                <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700">
+                  Learn More About Us
+                </Button>
+              </Link>
             </div>
             <div className="relative">
               <img 
@@ -62,6 +65,59 @@ const Index = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Academic Excellence Preview */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary mb-4">Academic Excellence</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Our CBSE-affiliated curriculum combines rigorous academics with innovative teaching methodologies, 
+              preparing students for success in higher education and beyond.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <Card className="border-0 shadow-lg text-center">
+              <CardHeader>
+                <CardTitle className="text-xl text-primary">Science Stream</CardTitle>
+                <Badge variant="secondary">PCM/PCB</Badge>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Advanced laboratory facilities and research programs preparing students for engineering and medical careers.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg text-center">
+              <CardHeader>
+                <CardTitle className="text-xl text-primary">Commerce Stream</CardTitle>
+                <Badge variant="secondary">Business Studies</Badge>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Comprehensive business education with practical internships and entrepreneurship programs.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg text-center">
+              <CardHeader>
+                <CardTitle className="text-xl text-primary">Arts Stream</CardTitle>
+                <Badge variant="secondary">Humanities</Badge>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Liberal arts education fostering critical thinking and preparing students for civil services and law.</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Link to="/academics">
+              <Button size="lg" variant="outline">
+                Explore Our Academic Programs
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -80,9 +136,11 @@ const Index = () => {
             Take the first step towards your child's bright future at Almonte High School
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="bg-emerald-600 hover:bg-emerald-700 text-white border-none">
-              Apply Now for 2026-27
-            </Button>
+            <Link to="/admissions">
+              <Button size="lg" variant="secondary" className="bg-emerald-600 hover:bg-emerald-700 text-white border-none">
+                Apply Now for 2026-27
+              </Button>
+            </Link>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
               Schedule a Campus Visit
             </Button>
