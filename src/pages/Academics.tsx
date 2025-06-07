@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -6,13 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { BookOpen, Award, Users, Clock, Calculator, Flask, Globe, Palette, Music, Dumbbell } from 'lucide-react';
+import { BookOpen, Award, Users, Clock, Calculator, FlaskConical, Globe, Palette, Music, Dumbbell } from 'lucide-react';
 
 const Academics = () => {
   const streams = [
     {
       name: "Science Stream",
-      icon: <Flask className="h-8 w-8 text-emerald-600" />,
+      icon: <FlaskConical className="h-8 w-8 text-emerald-600" />,
       subjects: ["Physics", "Chemistry", "Mathematics", "Biology", "Computer Science", "English"],
       description: "Comprehensive science education preparing students for engineering, medicine, and research careers.",
       careers: ["Engineering", "Medicine", "Research", "Biotechnology", "Pharmaceutical"]
