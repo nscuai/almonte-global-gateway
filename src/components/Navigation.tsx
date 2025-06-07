@@ -17,7 +17,7 @@ const Navigation = () => {
 
   const navItems = [
     {
-      title: "About Us",
+      title: "About",
       items: [
         { title: "Vision & Mission", href: "#vision" },
         { title: "Leadership Team", href: "#leadership" },
@@ -47,7 +47,7 @@ const Navigation = () => {
       ]
     },
     {
-      title: "Beyond Academics",
+      title: "Activities",
       items: [
         { title: "Clubs & Societies", href: "#clubs" },
         { title: "Sports Academy", href: "#sports" },
@@ -111,7 +111,7 @@ const Navigation = () => {
                   <NavigationMenuItem>
                     <NavigationMenuLink 
                       href="#home"
-                      className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                     >
                       Home
                     </NavigationMenuLink>
@@ -119,7 +119,7 @@ const Navigation = () => {
                   
                   {navItems.map((item) => (
                     <NavigationMenuItem key={item.title}>
-                      <NavigationMenuTrigger className="text-sm font-medium">
+                      <NavigationMenuTrigger className="text-sm font-medium px-3">
                         {item.title}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
@@ -143,36 +143,36 @@ const Navigation = () => {
                   <NavigationMenuItem>
                     <NavigationMenuLink 
                       href="#global"
-                      className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                     >
-                      Global Connect
+                      Global
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   
                   <NavigationMenuItem>
                     <NavigationMenuLink 
                       href="#parents"
-                      className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                     >
-                      Parents & Students
+                      Parents
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   
                   <NavigationMenuItem>
                     <NavigationMenuLink 
                       href="#news"
-                      className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                     >
-                      News & Events
+                      News
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   
                   <NavigationMenuItem>
                     <NavigationMenuLink 
                       href="#contact"
-                      className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                     >
-                      Contact Us
+                      Contact
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                 </NavigationMenuList>
@@ -180,12 +180,12 @@ const Navigation = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="hidden lg:flex items-center gap-3">
-              <Button variant="outline" size="sm">
-                Parent Portal
+            <div className="hidden lg:flex items-center gap-2">
+              <Button variant="outline" size="sm" className="text-xs">
+                Portal
               </Button>
-              <Button className="bg-emerald-600 hover:bg-emerald-700" size="sm">
-                Apply Now
+              <Button className="bg-emerald-600 hover:bg-emerald-700" size="sm" className="text-xs">
+                Apply
               </Button>
             </div>
 
