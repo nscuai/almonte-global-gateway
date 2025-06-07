@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'luc
 
 const Footer = () => {
   const quickLinks = [
-    { title: "Admission Enquiry", href: "#admission-enquiry" },
+    { title: "Admission Enquiry", href: "/admissions" },
     { title: "School Calendar", href: "#calendar" },
     { title: "Exam Schedule", href: "#exam-schedule" },
     { title: "Transport & Safety", href: "#transport" },
@@ -39,31 +39,38 @@ const Footer = () => {
           {/* School Info */}
           <div className="lg:col-span-2">
             <div className="text-2xl font-bold mb-4">
-              Almonte<span className="text-emerald-400">HS</span>
+              Almonte<span className="text-emerald-400">School</span>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
-              Empowering futures through world-class education that combines Indian values 
-              with global standards. Where excellence meets opportunity.
+              Empowering futures through world-class education that combines traditional values 
+              with modern learning. Established in 1981, serving the Northeast with excellence.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3 mb-6">
-              <div className="flex items-center text-slate-300">
-                <MapPin className="h-4 w-4 mr-3 text-emerald-400 flex-shrink-0" />
-                <span className="text-sm">123 Education Avenue, Sector 15, Gurgaon, Haryana 122001</span>
+              <div className="flex items-start text-slate-300">
+                <MapPin className="h-4 w-4 mr-3 text-emerald-400 flex-shrink-0 mt-1" />
+                <div className="text-sm">
+                  <div>Almonte School</div>
+                  <div>Lower Lingti, Near the old mithun shed</div>
+                  <div>Ziro - Memba trek route, Circle 4</div>
+                  <div>Sub-Sub Post: Pango</div>
+                  <div>Upper Siang District</div>
+                  <div>Arunachal Pradesh – 791002, India</div>
+                </div>
               </div>
               <div className="flex items-center text-slate-300">
                 <Phone className="h-4 w-4 mr-3 text-emerald-400 flex-shrink-0" />
                 <div className="text-sm">
                   <div>Main: +91 98765 43210</div>
-                  <div>Transport: +91 98765 43211</div>
+                  <div>Admissions: +91 98765 43211</div>
                 </div>
               </div>
               <div className="flex items-center text-slate-300">
                 <Mail className="h-4 w-4 mr-3 text-emerald-400 flex-shrink-0" />
                 <div className="text-sm">
-                  <div>info@almontehs.org</div>
-                  <div>admissions@almontehs.org</div>
+                  <div>support@almonte.ac</div>
+                  <div>Website: almonte.ac</div>
                 </div>
               </div>
             </div>
@@ -165,7 +172,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-slate-400 text-sm">
-              © 2024 Almonte High School. All rights reserved.
+              © 2024 Almonte School. All rights reserved. Established 1981.
             </div>
             <div className="flex items-center gap-6 text-slate-400 text-sm">
               <span>Designed with ❤️ for Education</span>
