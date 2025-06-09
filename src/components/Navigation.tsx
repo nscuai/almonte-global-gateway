@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,7 +95,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center gap-3">
-              <a href="/" className="flex items-center gap-3">
+              <Link to="/" className="flex items-center gap-3">
                 <img 
                   src="/lovable-uploads/e8342f00-c930-41c6-95fa-fb4c83c900a7.png" 
                   alt="Almonte High School Logo" 
@@ -103,7 +104,7 @@ const Navigation = () => {
                 <div className="text-2xl font-bold text-primary">
                   Almonte<span className="text-emerald-600">HS</span>
                 </div>
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Navigation */}
@@ -111,11 +112,13 @@ const Navigation = () => {
               <NavigationMenu>
                 <NavigationMenuList className="gap-1">
                   <NavigationMenuItem>
-                    <NavigationMenuLink 
-                      href="/"
-                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      Home
+                    <NavigationMenuLink asChild>
+                      <Link 
+                        to="/"
+                        className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        Home
+                      </Link>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   
@@ -143,38 +146,46 @@ const Navigation = () => {
                   ))}
                   
                   <NavigationMenuItem>
-                    <NavigationMenuLink 
-                      href="#global"
-                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      Global
+                    <NavigationMenuLink asChild>
+                      <Link 
+                        to="/global"
+                        className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        Global
+                      </Link>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   
                   <NavigationMenuItem>
-                    <NavigationMenuLink 
-                      href="#parents"
-                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      Parents
+                    <NavigationMenuLink asChild>
+                      <Link 
+                        to="/parents"
+                        className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        Parents
+                      </Link>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   
                   <NavigationMenuItem>
-                    <NavigationMenuLink 
-                      href="#news"
-                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      News
+                    <NavigationMenuLink asChild>
+                      <Link 
+                        to="/news"
+                        className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        News
+                      </Link>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                   
                   <NavigationMenuItem>
-                    <NavigationMenuLink 
-                      href="#contact"
-                      className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      Contact
+                    <NavigationMenuLink asChild>
+                      <Link 
+                        to="/contact"
+                        className="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        Contact
+                      </Link>
                     </NavigationMenuLink>
                   </NavigationMenuItem>
                 </NavigationMenuList>
@@ -186,9 +197,11 @@ const Navigation = () => {
               <Button variant="outline" size="sm" className="text-xs">
                 Portal
               </Button>
-              <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700 text-xs">
-                Apply
-              </Button>
+              <Link to="/admissions">
+                <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700 text-xs">
+                  Apply
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile menu trigger */}
@@ -200,9 +213,11 @@ const Navigation = () => {
               </SheetTrigger>
               <SheetContent side="right" className="w-80">
                 <div className="flex flex-col space-y-4 mt-6">
-                  <Button className="bg-emerald-600 hover:bg-emerald-700 mb-4">
-                    Apply Now
-                  </Button>
+                  <Link to="/admissions">
+                    <Button className="bg-emerald-600 hover:bg-emerald-700 mb-4 w-full">
+                      Apply Now
+                    </Button>
+                  </Link>
                   
                   {navItems.map((item) => (
                     <div key={item.title} className="space-y-2">
@@ -221,6 +236,37 @@ const Navigation = () => {
                       </div>
                     </div>
                   ))}
+                  
+                  <div className="space-y-2 border-t pt-4">
+                    <Link 
+                      to="/global" 
+                      className="block py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Global
+                    </Link>
+                    <Link 
+                      to="/parents" 
+                      className="block py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Parents
+                    </Link>
+                    <Link 
+                      to="/news" 
+                      className="block py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      News
+                    </Link>
+                    <Link 
+                      to="/contact" 
+                      className="block py-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      Contact
+                    </Link>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
