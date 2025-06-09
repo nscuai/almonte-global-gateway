@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   const quickLinks = [
@@ -71,6 +71,26 @@ const Footer = () => {
                 <div className="text-sm">
                   <div>support@almonte.ac</div>
                   <div>Website: almonte.ac</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Accreditation Links */}
+            <div className="mb-6">
+              <h4 className="text-emerald-400 font-semibold mb-3">Accreditations</h4>
+              <div className="space-y-2">
+                <a 
+                  href="https://weqsc.org" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-slate-300 hover:text-emerald-400 transition-colors text-sm"
+                >
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  WEQSC Approved Institution
+                </a>
+                <div className="flex items-center text-slate-300 text-sm">
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  UNICEF Recognized School
                 </div>
               </div>
             </div>

@@ -75,7 +75,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-primary mb-4">Academic Excellence</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our CBSE-affiliated curriculum combines rigorous academics with innovative teaching methodologies, 
+              Our WEQSC-approved curriculum combines rigorous academics with innovative teaching methodologies, 
               preparing students for success in higher education and beyond.
             </p>
           </div>
