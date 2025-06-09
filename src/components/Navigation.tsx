@@ -30,7 +30,7 @@ const Navigation = () => {
     {
       title: "Academics",
       items: [
-        { title: "CBSE/ICSE Curriculum", href: "/academics#curriculum" },
+        { title: "Curriculum Framework", href: "/academics#curriculum" },
         { title: "Teaching Approach", href: "/academics#approach" },
         { title: "Departments", href: "/academics#departments" },
         { title: "Academic Calendar", href: "/academics#calendar" },
@@ -84,7 +84,7 @@ const Navigation = () => {
             </div>
           </div>
           <div className="hidden md:block text-xs">
-            Admissions Open for 2026-27 | Schedule Your Visit Today
+            WEQSC Approved | UNICEF Recognized | Admissions Open for 2026-27
           </div>
         </div>
       </div>

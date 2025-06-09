@@ -13,7 +13,7 @@ const About = () => {
     { year: "1985", event: "First batch of 50 students graduates with distinction" },
     { year: "1992", event: "Expanded to include senior secondary education" },
     { year: "1998", event: "Introduced computer education and science laboratories" },
-    { year: "2005", event: "Achieved CBSE affiliation and recognition" },
+    { year: "2005", event: "Achieved WEQSC accreditation and UNICEF recognition" },
     { year: "2010", event: "Launched international exchange programs" },
     { year: "2015", event: "Established digital learning initiatives" },
     { year: "2020", event: "Successfully transitioned to hybrid learning model" },
@@ -52,7 +52,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="outline" className="mb-4 border-primary text-primary">
-              Established 1981
+              WEQSC Approved | UNICEF Recognized
             </Badge>
             <h1 className="text-5xl font-bold text-primary mb-6">About Almonte School</h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">

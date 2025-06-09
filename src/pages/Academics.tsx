@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -57,7 +58,7 @@ const Academics = () => {
 
   const achievements = [
     { year: "2024", achievement: "Top School in Arunachal Pradesh - Academic Excellence Award" },
-    { year: "2023", achievement: "100% Pass Rate in CBSE Class XII Examinations" },
+    { year: "2023", achievement: "100% Pass Rate in Senior Secondary Examinations" },
     { year: "2023", achievement: "State Champions - Science Olympiad" },
     { year: "2022", achievement: "Excellence in Digital Education - Northeast India" },
     { year: "2022", achievement: "Best School for Holistic Development - State Level" }
@@ -72,16 +73,16 @@ const Academics = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="outline" className="mb-4 border-primary text-primary">
-              CBSE Affiliated
+              WEQSC Approved | UNICEF Recognized
             </Badge>
             <h1 className="text-5xl font-bold text-primary mb-6">Academic Excellence</h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Our comprehensive academic program combines rigorous CBSE curriculum with innovative 
+              Our comprehensive academic program combines rigorous curriculum with innovative 
               teaching methodologies, preparing students for success in higher education and beyond.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Badge variant="secondary">Classes I-XII</Badge>
-              <Badge variant="secondary">CBSE Affiliated</Badge>
+              <Badge variant="secondary">WEQSC Approved</Badge>
               <Badge variant="secondary">Digital Learning</Badge>
               <Badge variant="secondary">Research Programs</Badge>
             </div>
@@ -216,12 +217,12 @@ const Academics = () => {
               <Card>
                 <CardHeader>
                   <CardTitle>Secondary School (Classes IX-X)</CardTitle>
-                  <CardDescription>CBSE board preparation with comprehensive skill development</CardDescription>
+                  <CardDescription>Board preparation with comprehensive skill development</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold mb-3">CBSE Subjects:</h4>
+                      <h4 className="font-semibold mb-3">Core Subjects:</h4>
                       <ul className="space-y-2 text-muted-foreground">
                         <li>• English Language & Literature</li>
                         <li>• Hindi/Sanskrit</li>
