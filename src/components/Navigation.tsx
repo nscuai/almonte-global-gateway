@@ -94,16 +94,13 @@ const Navigation = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center gap-3">
-              <Link to="/" className="flex items-center gap-3">
+            <div className="flex items-center">
+              <Link to="/" className="flex items-center">
                 <img 
-                  src="/lovable-uploads/e8342f00-c930-41c6-95fa-fb4c83c900a7.png" 
-                  alt="Almonte High School Logo" 
-                  className="h-10 w-10 object-contain"
+                  src="/lovable-uploads/5f4704ad-7047-421f-bd22-f88a1e0f8e72.png" 
+                  alt="Almonte Higher Secondary School Logo" 
+                  className="h-12 w-auto object-contain"
                 />
-                <div className="text-2xl font-bold text-primary">
-                  Almonte<span className="text-emerald-600">HS</span>
-                </div>
               </Link>
             </div>
 

@@ -38,8 +38,12 @@ const Footer = () => {
           
           {/* School Info */}
           <div className="lg:col-span-2">
-            <div className="text-2xl font-bold mb-4">
-              Almonte<span className="text-emerald-400">School</span>
+            <div className="mb-4">
+              <img 
+                src="/lovable-uploads/5f4704ad-7047-421f-bd22-f88a1e0f8e72.png" 
+                alt="Almonte Higher Secondary School Logo" 
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
               Empowering futures through world-class education that combines traditional values 
