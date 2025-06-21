@@ -31,9 +31,10 @@ const Index = () => {
             <div>
               <h2 className="text-3xl font-bold text-primary mb-6">About Almonte School</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Operated by the esteemed Swami Gyananand Shiksha Parishad Trust and rooted in Indian values 
-                with global accreditation, Almonte School fosters holistic growth through innovative education. 
-                Our WEQSC approval and UNICEF recognition reflect our commitment to world-class educational standards.
+                Nestled in the scenic hills of Arunachal Pradesh, Almonte School is operated by the esteemed 
+                Swami Gyananand Shiksha Parishad Trust and rooted in Indian values with global accreditation. 
+                Our WEQSC approval and UNICEF recognition reflect our commitment to world-class educational standards 
+                in the Northeast region of India.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 bg-card rounded-lg">
@@ -78,7 +79,7 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-primary mb-4">Academic Excellence</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our WEQSC-approved curriculum combines rigorous academics with innovative teaching methodologies, 
-              preparing students for success in higher education and beyond, guided by SGS Trust's educational philosophy.
+              preparing students for success in higher education and beyond, guided by SGSP Trust's educational philosophy.
             </p>
           </div>
           
@@ -135,7 +136,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Join Our Community?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Take the first step towards your child's bright future at Almonte School - Where SGS Trust's values meet global excellence
+            Take the first step towards your child's bright future at Almonte School in Arunachal Pradesh - Where SGSP Trust's values meet global excellence
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/admissions">

@@ -29,7 +29,7 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-6">
             <Award className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">WEQSC Approved | UNICEF Recognized | SGS Trust</span>
+            <span className="text-sm font-medium">WEQSC Approved | UNICEF Recognized | SGSP Trust</span>
           </div>
           
           {/* Main Heading */}
@@ -40,8 +40,8 @@ const HeroSection = () => {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Where Indian values meet global standards. Join Almonte School's journey of academic excellence, 
-            holistic development, and international recognition under the guidance of SGS Trust.
+            Where Indian values meet global standards in the heart of Arunachal Pradesh. Join Almonte School's journey of academic excellence, 
+            holistic development, and international recognition under the guidance of SGSP Trust.
           </p>
           
           {/* CTA Buttons */}
@@ -55,7 +55,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 h-auto backdrop-blur-sm"
+              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 h-auto backdrop-blur-sm bg-white/10"
             >
               <PlayCircle className="mr-2 h-5 w-5" />
               Virtual Campus Tour
@@ -63,7 +63,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 h-auto backdrop-blur-sm"
+              className="border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 h-auto backdrop-blur-sm bg-white/10"
             >
               Schedule a Visit
             </Button>

@@ -9,7 +9,7 @@ const AboutHero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Badge variant="outline" className="mb-4 border-primary text-primary">
-            WEQSC Approved | UNICEF Recognized | SGS Trust
+            WEQSC Approved | UNICEF Recognized | SGSP Trust
           </Badge>
           <h1 className="text-5xl font-bold text-primary mb-6">About Almonte School</h1>
           <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
