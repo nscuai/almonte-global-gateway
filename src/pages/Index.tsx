@@ -29,13 +29,15 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-6">About Almonte High School</h2>
+              <h2 className="text-3xl font-bold text-primary mb-6">About Almonte School</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Rooted in Indian values and accredited by global standards, Almonte High School fosters holistic growth through innovative education. Our commitment to excellence has made us a premier institution for students seeking world-class education.
+                Operated by the esteemed Swami Gyananand Shiksha Parishad Trust and rooted in Indian values 
+                with global accreditation, Almonte School fosters holistic growth through innovative education. 
+                Our WEQSC approval and UNICEF recognition reflect our commitment to world-class educational standards.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 bg-card rounded-lg">
-                  <div className="text-2xl font-bold text-primary">15+</div>
+                  <div className="text-2xl font-bold text-primary">43+</div>
                   <div className="text-sm text-muted-foreground">Years of Excellence</div>
                 </div>
                 <div className="text-center p-4 bg-card rounded-lg">
@@ -59,8 +61,8 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&h=600" 
-                alt="Indian students in school uniforms at Almonte High School"
+                src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&w=800&h=600" 
+                alt="Indian students in school uniforms at Almonte School"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-lg"></div>
@@ -76,7 +78,7 @@ const Index = () => {
             <h2 className="text-3xl font-bold text-primary mb-4">Academic Excellence</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our WEQSC-approved curriculum combines rigorous academics with innovative teaching methodologies, 
-              preparing students for success in higher education and beyond.
+              preparing students for success in higher education and beyond, guided by SGS Trust's educational philosophy.
             </p>
           </div>
           
@@ -133,7 +135,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Join Our Community?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Take the first step towards your child's bright future at Almonte High School
+            Take the first step towards your child's bright future at Almonte School - Where SGS Trust's values meet global excellence
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/admissions">

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { GraduationCap, Users, Award, Globe, Heart, BookOpen, MapPin, Calendar } from 'lucide-react';
+import { GraduationCap, Users, Award, Globe, Heart, BookOpen, MapPin, Calendar, Building2, Shield } from 'lucide-react';
 
 const About = () => {
   const milestones = [
@@ -52,17 +52,94 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <Badge variant="outline" className="mb-4 border-primary text-primary">
-              WEQSC Approved | UNICEF Recognized
+              WEQSC Approved | UNICEF Recognized | SGS Trust
             </Badge>
             <h1 className="text-5xl font-bold text-primary mb-6">About Almonte School</h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               For over four decades, Almonte School has been a beacon of educational excellence 
-              in the pristine hills of Arunachal Pradesh, nurturing young minds and shaping future leaders.
+              in the pristine hills of Arunachal Pradesh, nurturing young minds and shaping future leaders 
+              under the guidance of the Swami Gyananand Shiksha Parishad Trust.
             </p>
             <div className="flex items-center justify-center gap-2 text-muted-foreground">
               <MapPin className="h-5 w-5" />
               <span>Lower Lingti, Upper Siang District, Arunachal Pradesh</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Information */}
+      <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary mb-12 text-center">Our Founding Trust</h2>
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-0 shadow-lg">
+              <CardHeader>
+                <CardTitle className="text-2xl text-primary flex items-center">
+                  <Building2 className="h-6 w-6 mr-3" />
+                  Swami Gyananand Shiksha Parishad Trust
+                </CardTitle>
+                <CardDescription className="text-lg">
+                  Established educational trust dedicated to transforming lives through quality education
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <p className="text-muted-foreground leading-relaxed">
+                  The Swami Gyananand Shiksha Parishad Trust, based in Andhra Pradesh, is a pioneering educational 
+                  organization committed to providing world-class education that combines traditional Indian values 
+                  with modern pedagogical approaches. Named after the revered Swami Gyananand, the trust embodies 
+                  the principles of knowledge, wisdom, and service to humanity.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-card p-4 rounded-lg">
+                    <h4 className="font-semibold text-primary mb-2">Vision</h4>
+                    <p className="text-sm text-muted-foreground">
+                      To create educational institutions that nurture holistic development, combining academic 
+                      excellence with character building and spiritual growth.
+                    </p>
+                  </div>
+                  <div className="bg-card p-4 rounded-lg">
+                    <h4 className="font-semibold text-primary mb-2">Mission</h4>
+                    <p className="text-sm text-muted-foreground">
+                      Establishing schools that serve as centers of learning, where students develop into 
+                      responsible citizens with strong moral foundations and global perspectives.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="bg-emerald-50 p-6 rounded-lg">
+                  <h4 className="font-semibold text-primary mb-3 flex items-center">
+                    <Shield className="h-5 w-5 mr-2" />
+                    Trust's Core Principles
+                  </h4>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li>• <strong>Seva (Service):</strong> Dedicated service to education and community development</li>
+                    <li>• <strong>Sanskar (Values):</strong> Instilling traditional Indian values alongside modern education</li>
+                    <li>• <strong>Sankalp (Commitment):</strong> Unwavering commitment to educational excellence</li>
+                    <li>• <strong>Satsang (Community):</strong> Building inclusive learning communities</li>
+                  </ul>
+                </div>
+
+                <p className="text-muted-foreground leading-relaxed">
+                  Under the trust's guidance, Almonte School has flourished as an institution that not only 
+                  achieves academic excellence but also develops students who are rooted in Indian culture 
+                  while being globally competent. The trust's emphasis on character development, environmental 
+                  consciousness, and social responsibility is reflected in every aspect of our educational approach.
+                </p>
+
+                <div className="text-center">
+                  <a 
+                    href="https://sgsptrust.org" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary hover:text-emerald-600 transition-colors"
+                  >
+                    Learn more about SGS Trust →
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -82,7 +159,8 @@ const About = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   To provide holistic education that combines academic excellence with character development, 
                   empowering students to become confident, compassionate, and capable individuals who contribute 
-                  positively to society while preserving the rich cultural heritage of Arunachal Pradesh.
+                  positively to society while preserving the rich cultural heritage of Arunachal Pradesh, 
+                  guided by the values of the Swami Gyananand Shiksha Parishad Trust.
                 </p>
               </CardContent>
             </Card>
@@ -96,9 +174,65 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be the leading educational institution in Northeast India, recognized for nurturing 
-                  global citizens who excel academically, lead with integrity, and serve humanity with 
-                  distinction while staying rooted in their cultural values.
+                  To be the leading educational institution in Northeast India, recognized globally for nurturing 
+                  students who excel academically, lead with integrity, and serve humanity with distinction while 
+                  staying rooted in Indian values and traditions as envisioned by our founding trust.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Accreditations & Recognition */}
+      <section className="py-16 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-primary mb-12 text-center">Accreditations & Recognition</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="border-0 shadow-lg text-center">
+              <CardHeader>
+                <div className="w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Globe className="h-8 w-8 text-blue-600" />
+                </div>
+                <CardTitle className="text-xl">WEQSC Approved</CardTitle>
+                <CardDescription>World Education Quality Standard Commission</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">
+                  Internationally recognized for maintaining world-class educational standards 
+                  by the Geneva-based commission.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg text-center">
+              <CardHeader>
+                <div className="w-16 h-16 bg-emerald-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Heart className="h-8 w-8 text-emerald-600" />
+                </div>
+                <CardTitle className="text-xl">UNICEF Recognized</CardTitle>
+                <CardDescription>Child-Friendly School Initiative</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">
+                  Recognized by UNICEF for creating a safe, inclusive, and effective 
+                  learning environment for all children.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg text-center">
+              <CardHeader>
+                <div className="w-16 h-16 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <Building2 className="h-8 w-8 text-orange-600" />
+                </div>
+                <CardTitle className="text-xl">SGS Trust</CardTitle>
+                <CardDescription>Swami Gyananand Shiksha Parishad</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground text-sm">
+                  Operated under the guidance of a trusted educational foundation 
+                  committed to holistic development and value-based education.
                 </p>
               </CardContent>
             </Card>
@@ -107,7 +241,7 @@ const About = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-16 bg-secondary/30">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-primary mb-8 text-center">Our Story</h2>
@@ -116,18 +250,21 @@ const About = () => {
                 Nestled in the breathtaking landscape of Lower Lingti, near the old mithun shed along 
                 the historic Ziro-Memba trek route, Almonte School began its journey in 1981 with a 
                 simple yet profound vision: to bring quality education to the remote yet culturally 
-                rich region of Upper Siang District.
+                rich region of Upper Siang District under the benevolent guidance of the Swami Gyananand 
+                Shiksha Parishad Trust.
               </p>
               <p className="mb-6">
                 Founded by visionary educators who believed that geographical isolation should never 
                 be a barrier to educational excellence, our school started with just 25 students in 
-                a modest building. Today, we proudly serve over 800 students from diverse backgrounds, 
-                offering education from primary through senior secondary levels.
+                a modest building. The trust's philosophy of combining traditional wisdom with modern 
+                education became the cornerstone of our approach. Today, we proudly serve over 800 
+                students from diverse backgrounds, offering education from primary through senior secondary levels.
               </p>
               <p>
                 Our unique location has shaped our identity - surrounded by pristine forests and 
                 traditional communities, we've learned to balance modern educational practices with 
-                deep respect for indigenous knowledge and environmental stewardship.
+                deep respect for indigenous knowledge and environmental stewardship, all while staying 
+                true to the trust's commitment to value-based education.
               </p>
             </div>
           </div>
@@ -135,7 +272,7 @@ const About = () => {
       </section>
 
       {/* Core Values */}
-      <section className="py-16">
+      <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Our Core Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -155,7 +292,7 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="py-16 bg-secondary/30">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-12 text-center">Our Journey Through Time</h2>
           <div className="max-w-4xl mx-auto">
@@ -176,13 +313,13 @@ const About = () => {
       </section>
 
       {/* Leadership Team Preview */}
-      <section className="py-16">
+      <section className="py-16 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-primary mb-4">Leadership Team</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Our dedicated team of educators and administrators work tirelessly to provide 
-              the best educational experience for our students.
+              the best educational experience for our students, guided by the trust's principles.
             </p>
           </div>
           
@@ -212,7 +349,7 @@ const About = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground text-sm">
-                  M.Ed., Former CBSE examiner, expert in curriculum development
+                  M.Ed., Former WEQSC examiner, expert in curriculum development
                 </p>
               </CardContent>
             </Card>

@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
-          backgroundImage: `linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.6)), url('/lovable-uploads/ecbb04ea-81c5-4ef0-8906-e020b181c8e4.png')`,
+          backgroundImage: `linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.6)), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1920&h=1080')`,
           transform: `translateY(${scrollY * 0.5}px)`
         }}
       />
@@ -29,19 +29,19 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-6">
             <Award className="h-4 w-4 mr-2" />
-            <span className="text-sm font-medium">CBSE & Western Accredited Excellence</span>
+            <span className="text-sm font-medium">WEQSC Approved | UNICEF Recognized | SGS Trust</span>
           </div>
           
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Empowering Futures,
-            <span className="block text-emerald-400">Globally Connected</span>
+            <span className="block text-emerald-400">Rooted in Values</span>
           </h1>
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Where Indian values meet global standards. Join Almonte High School's journey of academic excellence, 
-            holistic development, and international recognition.
+            Where Indian values meet global standards. Join Almonte School's journey of academic excellence, 
+            holistic development, and international recognition under the guidance of SGS Trust.
           </p>
           
           {/* CTA Buttons */}
@@ -72,7 +72,7 @@ const HeroSection = () => {
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-emerald-400 mb-1">15+</div>
+              <div className="text-3xl font-bold text-emerald-400 mb-1">43+</div>
               <div className="text-sm text-white/80">Years of Excellence</div>
             </div>
             <div className="text-center">
