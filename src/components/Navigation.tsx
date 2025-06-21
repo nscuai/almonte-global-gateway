@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import {
@@ -92,15 +91,24 @@ const Navigation = () => {
       {/* Main navigation */}
       <nav className="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center">
-              <Link to="/" className="flex items-center">
+              <Link to="/" className="flex items-center gap-3">
                 <img 
                   src="/lovable-uploads/5f4704ad-7047-421f-bd22-f88a1e0f8e72.png" 
                   alt="Almonte Higher Secondary School Logo" 
-                  className="h-12 w-auto object-contain"
+                  className="h-16 w-auto object-contain"
                 />
+                <div className="flex flex-col justify-center h-16">
+                  <div className="text-lg font-bold text-primary mb-1">AHS School</div>
+                  <div className="text-xs text-muted-foreground leading-tight mb-1" style={{ fontSize: '6px', lineHeight: '1.2' }}>
+                    Recognized by World Education Quality Standard Commission - Switzerland
+                  </div>
+                  <div className="text-xs text-muted-foreground leading-tight" style={{ fontSize: '6px', lineHeight: '1.2' }}>
+                    Approved by UNICEF | Managed by SGSP Trust
+                  </div>
+                </div>
               </Link>
             </div>
 

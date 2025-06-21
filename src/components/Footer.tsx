@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -38,12 +37,21 @@ const Footer = () => {
           
           {/* School Info */}
           <div className="lg:col-span-2">
-            <div className="mb-4">
+            <div className="flex items-start gap-4 mb-6">
               <img 
                 src="/lovable-uploads/5f4704ad-7047-421f-bd22-f88a1e0f8e72.png" 
                 alt="Almonte Higher Secondary School Logo" 
-                className="h-16 w-auto object-contain"
+                className="h-20 w-auto object-contain flex-shrink-0"
               />
+              <div className="flex flex-col justify-center h-20">
+                <div className="text-xl font-bold text-white mb-2">AHS School</div>
+                <div className="text-slate-300 leading-tight mb-1" style={{ fontSize: '6px', lineHeight: '1.2' }}>
+                  Recognized by World Education Quality Standard Commission - Switzerland
+                </div>
+                <div className="text-slate-300 leading-tight" style={{ fontSize: '6px', lineHeight: '1.2' }}>
+                  Approved by UNICEF | Managed by SGSP Trust
+                </div>
+              </div>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
               Empowering futures through world-class education that combines traditional values 
@@ -196,7 +204,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-slate-400 text-sm">
-              © 2024 Almonte School. All rights reserved. Established 1981.
+              © 2024 AHS School. All rights reserved. Established 1981.
             </div>
             <div className="flex items-center gap-6 text-slate-400 text-sm">
               <span>Designed with ❤️ for Education</span>
